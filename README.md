@@ -112,8 +112,7 @@ I can write down what needs doing, but I still struggle to decide what realistic
 ```mermaid
 flowchart LR
   U["Me"] --> FE["Front end: HTML, CSS, JavaScript"]
-  FE --> API["Back end / API: No server for the API"]
-  API --> DB[("Data: Browser Local Storage")]
+  FE --> DB[("Data: Browser Local Storage")]
 ```
 
 ---
