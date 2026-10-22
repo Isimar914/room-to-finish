@@ -1,4 +1,33 @@
+/* Header section */
+
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  background-color: #faf8fc;
+  color: #291c40;
+}
+
+header {
+  background-color: #ffffff;
+  padding: 20px 40px;
+  border-bottom: 2px solid #e6dff0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 20px;
+  color: #291c40;
+  font-family: Merriweather;
+  font-weight: 600;
+}
+
+main h1 {
+  padding: 0px 40px;
+  font-family: Merriweather;
+  margin-bottom: 8px;
+}
+
+main p {
+  margin-top: 0;
+  padding: 0px 40px;
+  font-family: Arial, Helvetica, sans-serif;
 }
