@@ -40,4 +40,23 @@ main p {
   border: 1px solid #e6dff0;
   border-radius: 20px;
   gap: 16px;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.task-form button {
+  background-color: #817bea;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 14px 24px;
+  font: inherit;
+  cursor: pointer;
 }
