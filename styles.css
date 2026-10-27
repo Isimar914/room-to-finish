@@ -78,3 +78,30 @@ main p {
   flex-grow: 1;
   max-width: 350px;
 }
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 12px 40px;;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 350px;
+}
+
+.deleteTask {
+  background-color: #817bea;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 14px 24px;
+  font: inherit;
+  cursor: pointer;
+}
