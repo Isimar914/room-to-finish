@@ -4,6 +4,7 @@ const addtaskButton = document.querySelector(".task-form button");
 const taskList = document.querySelector("#task-list");
 const taskEstimateInput = document.querySelector("#task-estimate");
 const taskPriorityInput = document.querySelector("#task-priority");
+const taskDueDateInput = document.querySelector("#task-due");
 
 addtaskButton.addEventListener("click", function () {
     const taskName = taskNameInput.value.trim();
@@ -42,7 +43,16 @@ addtaskButton.addEventListener("click", function () {
         priorityText = "No priority";
     }
 
-    taskItem.textContent = taskName + " - " + estimateText + " - " + priorityText;
+    const due_date = taskDueDateInput.value;
+    let date;
+
+    if (due_date === "") {
+        date = "No due date";
+    } else {
+        date = due_date;
+    }
+
+    taskItem.textContent = taskName + " - " + estimateText + " - " + priorityText + " - " + date;
 
     addDeleteButton(taskItem);
     taskList.appendChild(taskItem);
