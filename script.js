@@ -51,6 +51,7 @@ function addDeleteButton(taskItem) {
 
     deleteButton.addEventListener('click', function(){
         taskItem.remove();
+        saveTasks();
     });
 
     taskItem.appendChild(deleteButton);
