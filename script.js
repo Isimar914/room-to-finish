@@ -3,6 +3,7 @@ const taskNameInput = document.querySelector("#task-name");
 const addtaskButton = document.querySelector(".task-form button");
 const taskList = document.querySelector("#task-list");
 const taskEstimateInput = document.querySelector("#task-estimate");
+const taskPriorityInput = document.querySelector("#task-priority");
 
 addtaskButton.addEventListener("click", function () {
     const taskName = taskNameInput.value.trim();
@@ -28,14 +29,27 @@ addtaskButton.addEventListener("click", function () {
         estimateText = estimate + " hours";
     }
 
-    taskItem.textContent = taskName + " - " + estimateText;
+    const priority = taskPriorityInput.value;
+    let priorityText;
+
+    if (priority === "1") {
+        priorityText = "Low";
+    } else if (priority === "2") {
+        priorityText = "Medium";
+    }else if (priority === "3") {
+        priorityText = "High";
+    } else {
+        priorityText = "No priority";
+    }
+
+    taskItem.textContent = taskName + " - " + estimateText + " - " + priorityText;
 
     addDeleteButton(taskItem);
     taskList.appendChild(taskItem);
     saveTasks();
 
     taskNameInput.value = "";
-})
+});
 
 function saveTasks() {
 
