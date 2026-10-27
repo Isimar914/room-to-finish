@@ -52,7 +52,15 @@ addtaskButton.addEventListener("click", function () {
         date = due_date;
     }
 
-    taskItem.textContent = taskName + " - " + estimateText + " - " + priorityText + " - " + date;
+    const nameElement = document.createElement("span");
+    nameElement.className = "task-name";
+    nameElement.textContent = taskName;
+    taskItem.appendChild(nameElement);
+
+    const estimateElement = document.createElement("span");
+    estimateElement.className = "task-estimate";
+    estimateElement.textContent = estimateText;
+    taskItem.appendChild(estimateElement);
 
     addDeleteButton(taskItem);
     taskList.appendChild(taskItem);
