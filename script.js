@@ -83,7 +83,13 @@ function saveTasks() {
 
     let tasks = [];
     taskList.querySelectorAll("li").forEach(function(item) {
-        tasks.push(item.textContent.replace("Delete", "").trim());
+        const task = {
+            name: item.querySelector(".task-name").textContent,
+            estimate: item.querySelector(".task-estimate").textContent,
+            priority: item.querySelector(".task-priority").textContent,
+            dueDate: item.querySelector(".task-due").textContent
+        };
+        tasks.push(task);
     });
 
     localStorage.setItem("tasks", JSON.stringify(tasks));
@@ -93,9 +99,29 @@ function loadTasks() {
 
     const tasks = JSON.parse(localStorage.getItem("tasks")) || [];
 
-    tasks.forEach(function (taskName) {
+    tasks.forEach(function (task) {
     const taskItem = document.createElement("li");
-    taskItem.textContent = taskName;
+
+    const nameElement = document.createElement("span");
+    nameElement.className = "task-name";
+    nameElement.textContent = task.name;
+    taskItem.appendChild(nameElement);
+
+    const estimateElement = document.createElement("span");
+    estimateElement.className = "task-estimate";
+    estimateElement.textContent = task.estimate;
+    taskItem.appendChild(estimateElement);
+
+    const priorityElement = document.createElement("span");
+    priorityElement.className = "task-priority";
+    priorityElement.textContent = task.priority;
+    taskItem.appendChild(priorityElement);
+
+    const dateElement = document.createElement("span");
+    dateElement.className = "task-due";
+    dateElement.textContent = task.dueDate;
+    taskItem.appendChild(dateElement);
+
     addDeleteButton(taskItem);
     taskList.appendChild(taskItem);
     });
