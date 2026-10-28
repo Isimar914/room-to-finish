@@ -73,6 +73,7 @@ addtaskButton.addEventListener("click", function () {
     taskItem.appendChild(dateElement);
 
     addDeleteButton(taskItem);
+    addCheckbox(taskItem);
     taskList.appendChild(taskItem);
     saveTasks();
 
@@ -123,6 +124,7 @@ function loadTasks() {
     taskItem.appendChild(dateElement);
 
     addDeleteButton(taskItem);
+    addCheckbox(taskItem);
     taskList.appendChild(taskItem);
     });
 }
@@ -141,4 +143,13 @@ function addDeleteButton(taskItem) {
     });
 
     taskItem.appendChild(deleteButton);
+}
+
+function addCheckbox(taskItem) {
+    const checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
+    checkbox.className = "task-checkbox";
+    checkbox.setAttribute("aria-label", "Mark task complete");
+
+    taskItem.prepend(checkbox);
 }
