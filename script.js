@@ -77,7 +77,7 @@ addtaskButton.addEventListener("click", function () {
     taskList.appendChild(taskItem);
     saveTasks();
 
-    taskNameInput.value = "";
+    document.querySelector(".task-form").reset();
 });
 
 function saveTasks() {
