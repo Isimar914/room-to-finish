@@ -73,22 +73,31 @@ I can write down what needs doing, but I still struggle to decide what realistic
 
 | Feature (what it does) | Benefit (how my life gets better) | MVP or Later? |
 |---|---|---|
-|Quickly add, edit, and check off tasks, with optional deadlines and simple categories. |I can keep responsibilities organized without spending too much time formatting lists. |MVP |
-|Add and revise an estimate of the time remaining for each task, including “not sure yet.” |I can reconsider my workload as I learn how much effort something requires. |MVP |
-|Make a daily plan by choosing tasks and comparing their estimated time with the time I have available. |I can notice when I’m planning too much and leave room for breaks or unexpected difficulty.|MVP |
-|Review estimated time versus actual time spent on completed tasks. |I can learn from past experience and make more realistic plans. |Later |
+| Add tasks with optional due dates and Low, Medium, High, or no priority. | I can keep responsibilities and important details organized in one place. | MVP — built |
+| Choose an estimated time of 30 minutes, 1 hour, 2 hours, or “Not sure yet.” | I can record expected effort without needing an exact answer. | MVP — built |
+| Check or uncheck tasks, delete tasks, and save details and completion in the browser. | I can track progress without recreating my list after refreshing. | MVP — built |
 
 **MVP (2–3 features):** - 
-- A simple task list with optional deadlines and categories.
-- A daily plan showing planned work against available time.
+- Add tasks with estimates, optional priorities, and optional due dates.
+- Mark tasks complete or incomplete and delete tasks.
+- Save task details and completion in the browser.
 
 **Later:**
+- Edit existing tasks and revise estimates.
+- Allow custom time estimates beyond the current dropdown choices.
+- Add categories and filter or sort tasks.
+- Color displayed priorities: High red, Medium yellow/amber, and Low green.
+- Enter available hours and compare them with a daily plan.
+- Allocate part of a task to today and continue it across days.
+- Show tasks without estimates separately from the planned-time total.
+- Give a friendly notice when planned work exceeds available hours.
 - Compare estimated and actual time spent.
 - Calendar integration.
 
 **Not doing:**
 - Complex page customization like Notion.
 - Automatically deciding every priority or promising accurate time estimates.
+- Account or syncing between devices in this version.
 
 ---
 
