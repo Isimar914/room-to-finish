@@ -3,7 +3,7 @@
 
 Helping people decide what to focus on and make time for what matters.
 
-**Author:** Isimar Lara · **Course:** CMP 464/343 Product 1 · **Last updated:** 09/28/26
+**Author:** Isimar Lara · **Course:** CMP 464/343 Product 1 · **Last updated:** 10/29/26
 
 ---
 
@@ -70,6 +70,8 @@ I can write down what needs doing, but I still struggle to decide what realistic
 ---
 
 ## 4. Features & Benefits
+
+Currently, Room to Finish helps me keep track of tasks and their details. Next, I want to add daily planning so I can see what fits into the time I have available.
 
 | Feature (what it does) | Benefit (how my life gets better) | MVP or Later? |
 |---|---|---|
