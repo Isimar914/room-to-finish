@@ -133,3 +133,10 @@ flowchart LR
 - How should I plan tasks when I’m unsure how long they’ll take?
 - How much extra time should I leave for unexpected difficulty?
 - Will the daily plan help me finish responsibilities while keeping time for hobbies and rest?
+
+---
+
+## 7. Demo
+
+This demo shows adding tasks, checking and unchecking them, deleting them, and refreshing to confirm changes stay saved.
+
