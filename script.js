@@ -88,7 +88,8 @@ function saveTasks() {
             name: item.querySelector(".task-name").textContent,
             estimate: item.querySelector(".task-estimate").textContent,
             priority: item.querySelector(".task-priority").textContent,
-            dueDate: item.querySelector(".task-due").textContent
+            dueDate: item.querySelector(".task-due").textContent,
+            completed: item.querySelector(".task-checkbox").checked
         };
         tasks.push(task);
     });
@@ -124,7 +125,7 @@ function loadTasks() {
     taskItem.appendChild(dateElement);
 
     addDeleteButton(taskItem);
-    addCheckbox(taskItem);
+    addCheckbox(taskItem, task.completed);
     taskList.appendChild(taskItem);
     });
 }
@@ -145,11 +146,14 @@ function addDeleteButton(taskItem) {
     taskItem.appendChild(deleteButton);
 }
 
-function addCheckbox(taskItem) {
+function addCheckbox(taskItem, completed = false) {
     const checkbox = document.createElement("input");
     checkbox.type = "checkbox";
+    checkbox.checked = completed;
     checkbox.className = "task-checkbox";
     checkbox.setAttribute("aria-label", "Mark task complete");
-
+    checkbox.addEventListener("change", function() {
+        saveTasks();
+    });
     taskItem.prepend(checkbox);
 }
