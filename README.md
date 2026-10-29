@@ -97,8 +97,7 @@ I can write down what needs doing, but I still struggle to decide what realistic
 **Not doing:**
 - Complex page customization like Notion.
 - Automatically deciding every priority or promising accurate time estimates.
-- Account or syncing between devices in this version.
-
+- Accounts or syncing between devices in this version.
 ---
 
 ## 5. Tech Stack
@@ -111,10 +110,10 @@ I can write down what needs doing, but I still struggle to decide what realistic
 ### Back end
 | Piece | Choice | Why |
 |---|---|---|
-| Server / API | No server for the MVP |The first version can manage tasks and planning directly in the browser. |
-| Data storage |Browser Local Storage | Saves my tasks and plans between visits without needing a database or account.|
-| Outside services (optional) |None for the MVP |Doesn’t require outside services |
-| Hosting / deploy |GitHub |Fits a static site built with HTML, CSS, and JavaScript. |
+| Server / API | No server for the MVP |The first version can manage tasks. |
+| Data storage |Browser Local Storage | Saves my task details and completion status.|
+| Outside services (optional) | Google Fonts for the Merriweather heading font | Provides the heading font; task data stays in the browser and is not sent to Google Fonts. |
+| Hosting / deploy | Code hosted on GitHub; live deployment not set up yet | GitHub stores my source code and commit history. A public website link still needs to be set up. |
 
 ### Architecture sketch
 
