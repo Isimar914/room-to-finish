@@ -140,3 +140,4 @@ flowchart LR
 
 This demo shows adding tasks, checking and unchecking them, deleting them, and refreshing to confirm changes stay saved.
 
+https://github.com/user-attachments/assets/5530e39e-c373-4436-877f-26f60ac45fe0
