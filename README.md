@@ -115,7 +115,7 @@ Currently, Room to Finish helps me keep track of tasks and their details. Next, 
 | Server / API | No server for the MVP |The first version can manage tasks. |
 | Data storage |Browser Local Storage | Saves my task details and completion status.|
 | Outside services (optional) | Google Fonts for the Merriweather heading font | Provides the heading font; task data stays in the browser and is not sent to Google Fonts. |
-| Hosting / deploy | Code hosted on GitHub; live deployment not set up yet | GitHub stores my source code and commit history. A public website link still needs to be set up. |
+| Hosting / deploy | GitHub for source code; GitHub Pages for the live web app | Stores my code and commit history and publishes the app so anyone can open it in a browser. |
 
 ### Architecture sketch
 
@@ -137,6 +137,8 @@ flowchart LR
 ---
 
 ## 7. Demo
+
+**Try the web app:** [Room to Finish](https://isimar914.github.io/room-to-finish/)
 
 This demo shows adding tasks, checking and unchecking them, deleting them, and refreshing to confirm changes stay saved.
 
