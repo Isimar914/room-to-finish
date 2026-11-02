@@ -26,6 +26,12 @@ main h1 {
   margin-bottom: 8px;
 }
 
+main h2 {
+  padding: 0px 40px;
+  font-family: Merriweather;
+  margin-bottom: 8px;
+}
+
 main p {
   margin-top: 0;
   padding: 0px 40px;
